@@ -1,0 +1,8 @@
+.team {
+    @include section-mb;
+
+    &__heading {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+}

@@ -1,0 +1,25 @@
+.main-btn {
+
+    font-family: "Raleway Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+
+    &__wrapper {
+
+        @include gradient-orange;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 50px;
+        width: 250px;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,20 @@
+body {
+  width: 100%;
+  max-width: 2060px;
+  margin: 0 auto;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+li {
+  @include main-text;
+}
