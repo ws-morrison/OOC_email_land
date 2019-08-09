@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpack = require('copy-webpack-plugin')
 const HtmlWebpack = require('html-webpack-plugin')
-
+// const Swiper = require('swiper');
 const PATHS = {
     src: path.join(__dirname, '../src'),
     dist: path.join(__dirname, '../docs'),
@@ -103,12 +103,5 @@ module.exports = {
             jQuery: "jquery",
             "window.jQuery": "jquery",
           }),
-    ],
-    resolve: {
-        modules: ['node_modules'],
-        alias: {
-          'owl.carousel': 'owl.carousel/dist/owl.carousel.min.js',
-          'owl.css': 'node_modules/swiper/dist/css/swiper.css'
-        }
-      }
+    ]
 }

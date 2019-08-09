@@ -1,6 +1,6 @@
 body {
-  width: 100%;
-  max-width: 2060px;
+    // width: 100%;
+    // max-width: 2060px;
   margin: 0 auto;
 
 }
@@ -18,3 +18,12 @@ p,
 li {
   @include main-text;
 }
+
+button {
+  outline: none;
+}
+
+// input[type='number'] {
+//   -moz-appearance: none;
+//   -webkit-appearance: none;
+// }

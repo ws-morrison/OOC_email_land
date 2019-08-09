@@ -7,6 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,500,800&display=swap" rel="stylesheet"> -->
   <title>Pragmatik</title>
+  <link href="css/app.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"> -->
+  <link href="css/app.css" rel="stylesheet">
 <link href="css/app.css" rel="stylesheet"></head>
 
 <body class="page-body header__bg">
@@ -30,11 +34,8 @@
     </div>
   </header>
   <main class="page-main wrapper">
-    <div class="container">
-
-
+    <!-- <div class="container"> -->
       <section class="calc calc__bg">
-
         <style>
           .calc__bg {
             background-image: url('./img/circle-bg.svg');
@@ -104,12 +105,15 @@
       <section class="clients">
         <div class="clients__heading">
           <h2 class="clients__heading main-title">Email-канал — маркетинговый канал
-            с самым высоким ROI</h2>
+            с самым высоким ROI
+          </h2>
+        </div>
 
-          <div id="clients-slider" class="clients__wrapper owl-carousel">
-            <!-- Puma -->
-            <div class="clients-item">
-              <div class="clients-item__col-1">
+        <div class="clients__wrapper swiper-container owl-carousel">
+          <!-- Puma -->
+          <div class="clients-item swiper-slide">
+            <div class="clients-item__col-1">
+              <div class="clients-item__content">
                 <div class="clients-item__img-wrapper">
                   <img src="./img/logo_puma.svg" alt="" class="clients-item__img">
                 </div>
@@ -117,44 +121,46 @@
                   обуви, одежды, инвентаря
                   и парфюмерии.</p>
               </div>
-
-              <div class="clients-item__col-2">
-                <div class="clients-item__img-wrapper">
-                  <img src="./img/slide_1.svg" alt="" class="clients-item__img">
-                </div>
-                <span class="clients-item__text">За 3 года увеличили базу подписчиков с 20 000 до 80 000.</span>
-              </div>
             </div>
+            <div class="clients-item__col-2">
+              <div class="clients-item__img-wrapper">
+                <img src="./img/slide_1.svg" alt="" class="clients-item__img">
+              </div>
+              <span class="clients-item__text">За 3 года увеличили базу подписчиков с 20 000 до 80 000.</span>
+            </div>
+          </div>
 
-            <!-- Haier -->
-            <div class="clients-item">
-              <div class="clients-item__col-1">
+          <!-- Haier -->
+          <div class="clients-item swiper-slide">
+            <div class="clients-item__col-1">
+              <div class="clients-item__content">
                 <div class="clients-item__img-wrapper">
                   <img src="./img/logo_haier.svg" alt="" class="clients-item__img">
                 </div>
                 <p class="clients-item__text">Китайская компания
                   по производству бытовой техники и электроники</p>
               </div>
+            </div>
+            <div class="clients-item__col-2">
+              <div class="clients-item__img-wrapper">
+                <img src="./img/slide_2.svg" alt="" class="clients-item__img">
+              </div>
+              <div class="clients-item__text-wrapper">
+                <div class="clients-item__text">Полное
+                  сопровождение коммуникационной стратегии</div>
 
-              <div class="clients-item__col-2">
-                <div class="clients-item__img-wrapper">
-                  <img src="./img/slide_2.svg" alt="" class="clients-item__img">
-                </div>
-                <div class="clients-item__text-wrapper">
-                  <div class="clients-item__text">Полное
-                    сопровождение коммуникационной стратегии</div>
-
-                  <div class="clients-item__text">увеличили <br> выручку
-                    за 1 год работы</div>
-                  <div class="clients-item__text">увеличили <br>
-                    охват базы</div>
-                </div>
+                <div class="clients-item__text">увеличили выручку
+                  за 1 год работы</div>
+                <div class="clients-item__text">увеличили
+                  охват базы</div>
               </div>
             </div>
+          </div>
 
-            <!-- T&J -->
-            <div class="clients-item">
-              <div class="clients-item__col-1">
+          <!-- T&J -->
+          <div class="clients-item swiper-slide">
+            <div class="clients-item__col-1">
+              <div class="clients-item__content">
                 <div class="clients-item__img-wrapper">
                   <img src="./img/logo_tj.svg" alt="" class="clients-item__img">
                 </div>
@@ -165,26 +171,27 @@
                   базируется в Сиэтле.
                 </p>
               </div>
-
-              <div class="clients-item__col-2">
-                <div class="clients-item__img-wrapper">
-                  <img src="./img/slide_3.svg" alt="" class="clients-item__img">
+            </div>
+            <div class="clients-item__col-2">
+              <div class="clients-item__img-wrapper">
+                <img src="./img/slide_3.svg" alt="" class="clients-item__img">
+              </div>
+              <div class="clients-item__text-wrapper clients-item__text-wrapper--narrow">
+                <div class="clients-item__text">
+                  <span class="chart-thumb chart-thumb--grey"></span>
+                  Было
                 </div>
-                <div class="clients-item__text-wrapper clients-item__text-wrapper--narrow">
-                  <div class="clients-item__text">
-                    <span class="chart-thumb chart-thumb--grey"></span>
-                    Было
-                  </div>
-                  <div class="clients-item__text">
-                    <span class="chart-thumb chart-thumb--blue"></span>
-                    Стало</div>
-                </div>
+                <div class="clients-item__text">
+                  <span class="chart-thumb chart-thumb--blue"></span>
+                  Стало</div>
               </div>
             </div>
+          </div>
 
-            <!-- Nikon -->
-            <div class="clients-item">
-              <div class="clients-item__col-1">
+          <!-- Nikon -->
+          <div class="clients-item swiper-slide">
+            <div class="clients-item__col-1">
+              <div class="clients-item__content">
                 <div class="clients-item__img-wrapper">
                   <img src="./img/logo_nikon.svg" alt="" class="clients-item__img">
                 </div>
@@ -194,27 +201,32 @@
                   для обработки
                   изображений.</p>
               </div>
-
-              <div class="clients-item__col-2">
-                <div class="clients-item__img-wrapper">
-                  <img src="./img/slide_4.svg" alt="" class="clients-item__img">
-                </div>
-                <div class="clients-item__text-wrapper">
-                  <div class="clients-item__text">низили стоимость привлечения лида
-                    по сравнению
-                    с прогнозом </div>
-                  <div class="clients-item__text">увеличили <br>
-                    эффективность
-                    сбора
-                  </div>
-                  <div class="clients-item__text">Запустили <br>
-                    в социальных сетях конкурс «Охотники за вдохновением»</div>
-                </div>
-              </div>
             </div>
 
+            <div class="clients-item__col-2">
+              <div class="clients-item__img-wrapper">
+                <img src="./img/slide_4.svg" alt="" class="clients-item__img">
+              </div>
+              <div class="clients-item__text-wrapper">
+                <div class="clients-item__text">низили стоимость привлечения лида
+                  по сравнению
+                  с прогнозом </div>
+                <div class="clients-item__text">увеличили
+                  эффективность
+                  сбора
+                </div>
+                <div class="clients-item__text">Запустили
+                  в социальных сетях конкурс «Охотники за вдохновением»</div>
+              </div>
+            </div>
           </div>
+
+
+          <!-- Pagination buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
         </div>
+
       </section>
 
       <section class="benefits">
@@ -259,7 +271,7 @@
 
         <div class="main-item main-item--margin">
           <div class="main-item__col-1">
-            <h2 class="team__heading main-title">Найми команду <br>
+            <h2 class="team__heading main-title">Найми команду
               за 150 000 ₽ в месяц: </h2>
 
             <div class="main-item__list-wrapper">
@@ -310,8 +322,7 @@
           </div>
         </div>
       </section>
-
-
+      
       <section class="benefits">
         <div class="benefits__heading">
           <h2 class="benefits__heading main-title">Почему мы?</h2>
@@ -344,7 +355,7 @@
           </div>
         </div>
       </section>
-    </div>
+    <!-- </div> -->
   </main>
 
 
@@ -359,8 +370,8 @@
   <footer class="page-footer">
     <section class="subscribe wrapper">
       <div class="subscribe__heading">
-        <h2 class="subscribe__heading main-title">Обсудим? <br>
-          Позвони нам +7 499 281-69-59 <br>
+        <h2 class="subscribe__heading main-title">Обсудим?
+          Позвони нам +7 499 281-69-59
           или оставь заявку</h2>
       </div>
 
@@ -425,6 +436,36 @@
       <span class="page-footer__text">© 2019 Агентство Out of Cloud</span>
     </section>
   </footer>
+  <script type="text/javascript" src="js/app.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+  </script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        dots: false,
+        nav: true,
+        // responsiveBaseWidth: ".swiper-slide",
+      });
+    });
+  </script>
 <script type="text/javascript" src="js/app.js"></script></body>
 
 </html>
