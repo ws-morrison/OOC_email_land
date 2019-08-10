@@ -25,7 +25,7 @@
 
 // Typo Mixins
 @mixin main-h2 {
-  font-family: "Raleway Medium";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -36,7 +36,7 @@
 }
 
 @mixin main-text {
-  font-family: "Raleway Medium";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -46,7 +46,7 @@
 }
 
 @mixin label-text {
-  font-family: "Raleway Medium";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -56,7 +56,7 @@
 }
 
 @mixin input-text {
-  font-family: "Raleway Medium";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -67,7 +67,7 @@
 
 
 @mixin small-text {
-  font-family: "Raleway Light";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
