@@ -135,3 +135,30 @@
         color: white;
     }
 }
+
+// Tablet
+@media (max-width: $tableWidth) {
+    .calc__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calc__col-1 {
+        width: 100%;
+        max-width: 280px;
+        flex-basis: unset;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .calc__col-2 {
+        width: 100%;
+        max-width: 280px;
+        flex-basis: unset;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+// Tablet   
+@media (max-width: $phoneWidth) {}

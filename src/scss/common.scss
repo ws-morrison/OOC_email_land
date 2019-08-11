@@ -1,6 +1,6 @@
 body {
   // width: 100%;
-  // max-width: 2060px;
+  // max-width: 1660px;
   margin: 0 auto;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
@@ -23,7 +23,17 @@ button {
   outline: none;
 }
 
-// input[type='number'] {
-//   -moz-appearance: none;
-//   -webkit-appearance: none;
-// }
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+//  FF
+input[type='number'] {
+  -moz-appearance: textfield;
+}

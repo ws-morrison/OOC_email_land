@@ -84,3 +84,38 @@
 @mixin gradient-orange {
   background: linear-gradient(101.75deg, #FF6201 0%, #FFA216 98.58%);
 }
+
+
+// Tablet
+@media (max-width: $tableWidth) {
+  @mixin section-mb {
+    margin-bottom: 50px;
+  }
+
+  // Typo Mixins
+  @mixin main-h2 {
+
+    line-height: 36px;
+
+  }
+
+  @mixin main-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @mixin label-text {
+    font-size: 14px;
+    line-height: 24px;
+
+  }
+
+  @mixin input-text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+}
+
+
+@media (max-width: $phoneWidth) {}
