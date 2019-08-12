@@ -10,21 +10,50 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link href="css/app.css" rel="stylesheet"></head>
 
-<body class="page-body page-body__bg">
+<body class="page-body page-body__bg benefits__bg">
   <img src="./img/polygon-bg.svg" class='polygon' alt="">
   <header class="page-header page-header__bg">
     <style>
-      .page-body__bg {
+      .page-header__bg {
         background-image: url('./img/triangle-bg.svg');
         background-repeat: no-repeat;
         background-position-x: 100%;
-        background-position-y: 0%;
+        background-position-y: -50px;
+      }
+
+      .benefits__bg {
+        background-image: url('./img/poly__bg.svg');
+        background-size: 610px 652px;
+        background-repeat: no-repeat;
+        /* background-position-x: -25%;
+        background-position-y: 68%; */
+        background-position-x: -200px;
+        background-position-y: 3150px;
+        z-index: 1;
+
+      }
+
+      .benefits__bg-right {
+        background-image: url('./img/polygon-bg-right.svg');
+        background-size: 610px 652px;
+        background-repeat: no-repeat;
+        background-position-x: 1250px;
+        background-position-y: -160px;
+        z-index: 1;
+      }
+
+      .team__bg {
+        background-image: url('./img/circle-bg.svg');
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 50%;
+        z-index: 1;
       }
 
       .polygon {
         position: absolute;
-        top: -100px;
-
+        top: -200px;
+        left: -100px;
         transform: rotate(70deg);
       }
 
@@ -44,8 +73,8 @@
       </div>
     </div>
   </header>
-  <main class="page-main wrapper page-main__bg">
-    <section class="calc">
+  <main class="page-main page-main__bg">
+    <section class="calc calc__bg">
       <div class="container">
         <style>
           .calc__bg {
@@ -69,7 +98,7 @@
                 <div class="calc-form__item">
                   <span class="calc-form__input-title">Размер базы</span>
                   <label class="calc-form__label" for="1">
-                    <input class="calc-form__input" id="calcB3" type="number" for="1" placeholder="" value='' />
+                    <input class="calc-form__input" id="calcB3" type="number" for="1" placeholder="0" value='' />
                   </label>
                   <span class="calc-form__input-caption">Сколько подписчиков? </span>
                 </div>
@@ -77,7 +106,7 @@
                 <div class="calc-form__item">
                   <span class="calc-form__input-title">Трафик на сайте</span>
                   <label class="calc-form__label" for="1">
-                    <input class="calc-form__input" id="calcB4" type="number" for="1" placeholder="" value='' />
+                    <input class="calc-form__input" id="calcB4" type="number" for="1" placeholder="0" value='' />
                   </label>
                   <span class="calc-form__input-caption">Сколько пользователей в месяц? </span>
                 </div>
@@ -85,7 +114,8 @@
                 <div class="calc-form__item">
                   <span class="calc-form__input-title">Конверсия покупок на сайте</span>
                   <label class="calc-form__label" for="1">
-                    <input class="calc-form__input" id="calcB5" type="number" for="1" placeholder="" value='' />
+                    <input class="calc-form__input" id="calcB5" type="number" for="1" placeholder="0.1" value=''
+                      step='0.1' />
                   </label>
                   <span class="calc-form__input-caption">Сколько процентов из них покупает? </span>
                 </div>
@@ -93,7 +123,7 @@
                 <div class="calc-form__item">
                   <span class="calc-form__input-title">Средний чек</span>
                   <label class="calc-form__label" for="1">
-                    <input class="calc-form__input" id="calcB6" type="number" for="1" placeholder="" value='' />
+                    <input class="calc-form__input" id="calcB6" type="number" for="1" placeholder="0" value='' />
                   </label>
                   <span class="calc-form__input-caption">Какая средняя сумма покупки в рублях?</span>
                 </div>
@@ -252,7 +282,7 @@
       </div>
     </section>
 
-    <section class="benefits">
+    <section class="benefits benefits__bg-right">
       <div class="container">
         <div class="benefits__heading">
           <h2 class="benefits__heading main-title">С помощью email-маркетинга:</h2>
@@ -283,14 +313,6 @@
         <style>
           .main-item__list {
             list-style-image: url('./img/icons/list-thumb.svg');
-          }
-
-          .team__bg {
-            background-image: url('./img/circle-bg.svg');
-            background-repeat: no-repeat;
-            background-position-x: 100%;
-            background-position-y: 50%;
-            z-index: 1;
           }
         </style>
 
@@ -386,12 +408,12 @@
       </div>
     </section>
 
-    <!-- <style>
+    <style>
       .sub-modal__bg {
         background-image: url('./img/modal_bg.svg');
         background-repeat: no-repeat;
-        background-size: contain;
-        /* background-size: 500px 440px; */
+        /* background-size: contain; */
+        background-size: 100% 100%;
       }
     </style>
     <div class="sub-modal sub-modal__bg">
@@ -403,7 +425,7 @@
         <p class="sub-modal__text">Мы свяжемся с вами<br>
           в ближайшее время.</p>
       </div>
-    </div> -->
+    </div>
   </main>
 
 

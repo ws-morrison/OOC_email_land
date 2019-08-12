@@ -40,3 +40,29 @@
         }
     }
 }
+
+@media (max-width: $tableWidth) {
+    .sub-modal {
+        width: 320px;
+
+
+        &__text-wrapper {
+            text-align: center;
+            margin-top: 110px;
+        }
+    }
+}
+
+@media (max-width: $smTablet) {
+
+    // .sub-modal {
+    //     width: 320px;
+    // }
+
+    // &__text-wrapper {
+    //     text-align: center;
+    //     margin-top: 0px;
+    // }
+}
+
+@media (max-width: $xlPhoneWidth) {}
