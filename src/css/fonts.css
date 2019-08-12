@@ -31,3 +31,13 @@
   font-weight: 300;
   font-style: normal;
 }
+
+/* Gotham Pro */
+
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+      url('../fonts/GothamPro-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+}
