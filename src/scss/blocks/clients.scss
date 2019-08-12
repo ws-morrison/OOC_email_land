@@ -12,8 +12,6 @@
 .clients-item {
     display: flex;
     justify-content: space-between;
-    // background-color: #5FEADA;
-
     box-shadow: 0px 4px 39px #F7F7F8;
     border-radius: 5px;
 
@@ -24,27 +22,15 @@
 
     &__col-1 {
         background-color: rgb(255, 255, 255);
-
-        // flex-basis: 345px;
-        // flex-basis: 264px;
-        // flex-basis: 49%;
-        // width: 445px;
-
         max-width: 345px;
         width: 100%;
         box-sizing: border-box;
-        // padding-top: 20px;
-        // padding-bottom: 20px;
-        // padding-left: 45px;
-        // padding-right: 35px;
         padding: 20px;
         border-right: 6px solid #5FEADA;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // align-items: center;
-        // align-self: center;
     }
 
     &__content {
@@ -55,12 +41,10 @@
 
     &__col-2 {
         background-color: rgb(255, 255, 255);
-        // flex-basis: 51%;
         padding-top: 53px;
         padding-bottom: 50px;
         padding-left: 28px;
         padding-right: 25px;
-        // width: 100%;
         box-sizing: border-box;
     }
 
@@ -75,8 +59,9 @@
 
     &__text-wrapper {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
+        // width: 95%;
         &--narrow {
             width: 200px;
             margin-left: 40px;
@@ -84,7 +69,7 @@
     }
 
     &__text {
-        width: 160px;
+        // width: 99%;
         font-family: "Raleway";
         font-style: normal;
         font-weight: normal;
@@ -109,52 +94,3 @@
         background: #4B7CF8;
     }
 }
-
-
-// .swiper-button-prev,
-// .swiper-button-next {
-//     content: "→";
-//     width: 40px;
-//     height: 40px;
-//     border: 1px solid #FF820C;
-//     border-radius: 100%;
-//     padding: 4px;
-//     text-align: center;
-// }
-
-// .owl-carousel .owl-nav button.owl-next,
-// .owl-carousel .owl-nav button.owl-prev,
-// .owl-carousel button.owl-dot {
-//     background: 0 0;
-//     color: inherit;
-//     border: none;
-//     padding: 0 !important;
-//     font: inherit;
-//     font-weight: 100;
-//     width: 40px;
-//     height: 40px;
-//     background: linear-gradient(134.01deg, #FF6903 -53.9%, #FF9B14 105.9%);
-//     border: 1px solid #FF800B;
-//     background-color: rgba(255, 130, 11, 0.05);
-//     border-radius: 100%;
-//     color: #fff;
-//     position: absolute;
-//     top: 240px;
-
-//     /* font-size: 16px; */
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .owl-carousel .owl-nav button.owl-next,
-// .owl-carousel button.owl-dot {
-
-//     right: 0px;
-// }
-
-// .owl-carousel .owl-nav button.owl-prev,
-// .owl-carousel button.owl-dot {
-
-//     left: 0px;
-// }
