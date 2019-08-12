@@ -25,7 +25,9 @@ $font-size-desktop-2xl: 45px;
 // MQ
 $desktopWidth: 1280px;
 $smDesktopWidth: 1120px;
-$tableWidth: 768px;
+$tableWidth: 1024px;
+$smTablet: 768px;
+$xlPhoneWidth: 680px;
 $phoneWidth: 480px;
 $smPhoneWidth: 320px;
 
@@ -33,7 +35,7 @@ $smPhoneWidth: 320px;
 
 // Grid
 .wrapper {
-    max-width: 1240px;
+    max-width: 1340px;
     width: 100%;
     margin: 0 auto;
 }
@@ -43,10 +45,10 @@ $smPhoneWidth: 320px;
     padding-right: 65px;
 }
 
-// Tablet
+
 @media (max-width: $tableWidth) {
     .wrapper {
-        max-width: 570px;
+        max-width: 1020px;
         width: 100%;
         margin: 0 auto;
     }
@@ -57,10 +59,9 @@ $smPhoneWidth: 320px;
     }
 }
 
-// Tablet   
-@media (max-width: $phoneWidth) {
+@media (max-width: $smTablet) {
     .wrapper {
-        max-width: 420px;
+        max-width: 750px;
         width: 100%;
         margin: 0 auto;
     }
@@ -68,5 +69,31 @@ $smPhoneWidth: 320px;
     .container {
         padding-left: 15px;
         padding-right: 15px;
+    }
+}
+
+@media (max-width: $xlPhoneWidth) {
+    .wrapper {
+        max-width: 660px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: $phoneWidth) {
+    .wrapper {
+        max-width: 410px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }

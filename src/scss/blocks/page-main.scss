@@ -38,4 +38,39 @@
         justify-content: space-around;
         flex-basis: 45%;
     }
+
+    &__col-2 {
+        display: flex;
+        align-items: center;
+    }
 }
+
+@media (max-width: $tableWidth) {
+    .main-item {
+        display: flex;
+        flex-direction: column;
+
+        &__list-wrapper {
+            max-width: 340px;
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__col-1 {
+            flex-basis: unset;
+            margin-bottom: 70px;
+        }
+
+        &__col-2 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: $smTablet) {}
+
+@media (max-width: $xlPhoneWidth) {}
